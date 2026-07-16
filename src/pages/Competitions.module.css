@@ -1,0 +1,142 @@
+.compContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+  background-color: #1a1a1a;
+}
+
+.contentPanel {
+  max-width: 1100px;
+  width: 100%;
+}
+
+.tableSection {
+  margin-bottom: 60px;
+}
+
+.tableSection h2 {
+  font-size: 1.8rem;
+  color: #ff0000; /* Título rojo fuerte solicitado */
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  font-weight: 700;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.modernTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  /* Fuente específica requerida para parecerse a la tabla de referencia */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.modernTable th,
+.modernTable td {
+  padding: 15px 20px;
+  color: #ddd;
+}
+
+.modernTable thead th {
+  color: #888; 
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #333; 
+}
+
+.modernTable tbody tr {
+  border-bottom: 1px solid #333;
+  transition: background-color 0.2s ease;
+}
+
+.modernTable tbody tr:hover {
+  background-color: #242424; 
+}
+
+.nameCell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.compThumbnail {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid #444;
+}
+
+.compLink {
+  color: #007bff; /* Color azul estilo enlace tradicional */
+  text-decoration: underline; /* Subrayado por defecto */
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.compLink:hover {
+  color: #0056b3;
+}
+
+.empty {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+  padding: 30px !important;
+}
+
+.peopleIcon {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
+  color: #bbb;
+}
+
+/* Badges for types */
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+}
+
+.badgeWca {
+  background-color: #d32f2f; 
+}
+
+.badgeReunion {
+  background-color: #2e7d32; 
+}
+
+.badgeComp {
+  background-color: #f57f17; 
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .compContainer {
+    padding: 60px 10px;
+  }
+  
+  .modernTable th,
+  .modernTable td {
+    padding: 12px 10px;
+    font-size: 0.9rem;
+  }
+
+  .compThumbnail {
+    width: 30px;
+    height: 30px;
+  }
+}

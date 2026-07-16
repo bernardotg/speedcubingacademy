@@ -1,0 +1,71 @@
+.homeContainer {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px 40px;
+  background-color: #121212;
+  background-image: radial-gradient(circle at center, #1f1f1f 0%, #121212 100%);
+}
+
+.heroContent {
+  max-width: 800px;
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+.heroContent h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+
+.heroContent p {
+  font-size: 1.3rem;
+  color: #aaa;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: #ff4d4d;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 77, 77, 0.4);
+}
+
+.ctaButton:hover {
+  background-color: #ff3333;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 77, 77, 0.6);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .heroContent h1 {
+    font-size: 2.8rem;
+  }
+  
+  .heroContent p {
+    font-size: 1.1rem;
+  }
+}

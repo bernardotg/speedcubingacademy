@@ -1,0 +1,153 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.topheader {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  background-color: #1a1a1a; /* Solid dark color */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.brand .logo {
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu a {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.activeLink {
+  background-color: rgba(175, 8, 8, 0.2);
+  color: #ff4d4d !important; /* Lighter red for dark mode */
+  font-weight: 600;
+}
+
+.openMenu, .closeMenu {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #e0e0e0;
+}
+
+.mainContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.footer {
+  background-color: #0f0f0f;
+  border-top: 1px solid #2a2a2a;
+  padding: 40px 20px;
+  margin-top: auto;
+}
+
+.footerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  color: #888;
+}
+
+.footerLogo {
+  height: 60px;
+  border-radius: 50%;
+  filter: grayscale(20%);
+}
+
+.footerLinks {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footerLinks a {
+  color: #aaa;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footerLinks a:hover {
+  color: #ff4d4d;
+}
+
+@media (max-width: 900px) {
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background-color: #1a1a1a;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+    padding-top: 80px;
+    transition: right 0.4s ease;
+    gap: 15px;
+  }
+
+  .menuOpened {
+    right: 0;
+  }
+
+  .openMenu {
+    display: block;
+  }
+
+  .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .menu a {
+    width: 100%;
+    text-align: center;
+  }
+}
