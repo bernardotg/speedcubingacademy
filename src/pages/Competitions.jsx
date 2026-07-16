@@ -3,7 +3,8 @@ import { Users } from 'lucide-react';
 
 export default function Competitions() {
   const upcoming = [
-    { id: 99, date: 'Hoy', name: 'Torneo Online con Premios 2026', location: 'Venezuela', type: 'Comp', people: '-', link: 'https://latincubeshop.vercel.app/torneos', image: null }
+    { id: 99, date: 'Hoy', name: 'Torneo Online con Premios 2026', location: 'Venezuela', type: 'Comp', people: '-', link: 'https://latincubeshop.vercel.app/torneos', image: null },
+    { id: 100, date: '24-25 Jul 2026', name: 'Road to Nats Barquisimeto 2026', location: 'Barquisimeto, Venezuela', type: 'WCA', people: '-', link: 'https://cubingcontests.com/competitions/RoadToNatsBarquisimeto2026', image: null }
   ];
 
   const past = [
