@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import styles from './Layout.module.css';
+import logoUrl from '../assets/rubik_venezuela.jpg';
 
 export default function Layout({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,7 +44,7 @@ export default function Layout({ children }) {
         <nav className={styles.topnav}>
           <div className={styles.brand}>
             <a href="#inicio" onClick={closeMenu}>
-              <img src="/src/assets/rubik_venezuela.jpg" alt="Logo" className={styles.logo} />
+              <img src={logoUrl} alt="Logo" className={styles.logo} />
             </a>
           </div>
           
@@ -80,7 +81,7 @@ export default function Layout({ children }) {
 
       <footer className={styles.footer}>
         <div className={styles.footerContent}>
-          <img src="/src/assets/rubik_venezuela.jpg" alt="Logo" className={styles.footerLogo} />
+          <img src={logoUrl} alt="Logo" className={styles.footerLogo} />
           <div className={styles.footerLinks}>
             <a href="#inicio">Inicio</a>
             <a href="#competencias">Competencias</a>

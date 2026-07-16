@@ -58,7 +58,6 @@ export default function Competitions() {
                     <td>{comp.date}</td>
                     <td>
                       <div className={styles.nameCell}>
-                        {comp.image && <img src={comp.image} alt="" className={styles.compThumbnail} />}
                         <a href={comp.link} target="_blank" rel="noopener noreferrer" className={styles.compLink}>
                           {comp.name}
                         </a>
@@ -104,7 +103,6 @@ export default function Competitions() {
                     <td>{comp.date}</td>
                     <td>
                       <div className={styles.nameCell}>
-                        {comp.image && <img src={comp.image} alt="" className={styles.compThumbnail} />}
                         <a href={comp.link} target="_blank" rel="noopener noreferrer" className={styles.compLink}>
                           {comp.name}
                         </a>
